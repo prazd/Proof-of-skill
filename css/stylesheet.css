@@ -1,0 +1,9 @@
+.content{
+	width: 80vw;
+	margin: auto;
+}
+@media screen and (max-width: 768px) and (orientation: portrait){
+	.content{
+		width: 95vw;
+	}
+}
