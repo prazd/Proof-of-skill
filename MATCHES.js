@@ -55,4 +55,52 @@ var data = [{
 		"coef1" : 3.85 ,
 		"coef2" : 3.40,
 		"coefX" : 2.1
+	}
+	{
+		"id" : 8,
+		"team1" : "PL",
+		"team2" : "SEN",
+		"coef1" : 2.30 ,
+		"coef2" : 3.50,
+		"coefX" : 3.20
+	},
+	{
+		"id" : 9,
+		"team1" : "ARG",
+		"team2" : "CRO",
+		"coef1" : 1.85 ,
+		"coef2" : 4.80,
+		"coefX" : 3.60
+	},
+	{
+		"id" : 10,
+		"team1" : "BEL",
+		"team2" : "TUN",
+		"coef1" : 1.30 ,
+		"coef2" : 12.25,
+		"coefX" : 5.75
+	},
+	{
+		"id" : 11,
+		"team1" : "KOR",
+		"team2" : "MEX",
+		"coef1" : 4.10 ,
+		"coef2" : 2.05,
+		"coefX" : 3.40
+	},
+	{
+		"id" : 12,
+		"team1" : "GBR",
+		"team2" : "PAN",
+		"coef1" : 1.22 ,
+		"coef2" : 17.75,
+		"coefX" : 6.50
+	},
+	{
+		"id" : 13,
+		"team1" : "PL",
+		"team2" : "COL",
+		"coef1" : 3.05 ,
+		"coef2" : 2.60,
+		"coefX" : 3.20
 	}]
