@@ -3,8 +3,8 @@ pragma solidity ^0.4.22;
 //Смарт контракт предназначенный для ставки в эфире
 contract LeagueOfBest {
 
-    mapping(address => uint256) public sendETH;//map со значениями key(адрес отправителя):value(количество эфира)
-    address owner;         //тот кто контракт деплоит
+    mapping(address => uint256) public sendETH;//map со значениями key(адрес отправителя): value(количество эфира)
+    address owner;                             //тот кто контракт деплоит
     
     constructor(){
         owner = msg.sender; //при деплое выполняется
@@ -19,7 +19,7 @@ contract LeagueOfBest {
         return this;
     }
     
-    function () public payable { // отправляет эфир в смарт-контракт с акка 
+    function () public payable { // отправляет эфир в смарт-контракт с залогиненного акка 
         sendETH[msg.sender] = msg.value;
     }
     
@@ -27,9 +27,9 @@ contract LeagueOfBest {
         return address(this).balance;
     }
     
-    function setFromContract(address reciever) public returns(bool) {  //отправляет эфир получателю
-        require(msg.sender == owner);
-        reciever.transfer(1000000000000000000);// пока 1 эфир
+    function setFromContract(address reciever, uint256 ef) public returns(bool) {  //отправляет эфир получателю
+        require(msg.sender == owner); 
+        reciever.transfer(ef);  
     }
     
 }
