@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 window.onload = function(){
-
+	
 
 
 	let table = document.getElementById('table')
@@ -28,7 +28,10 @@ window.onload = function(){
 	let info_but_s = document.getElementById('info_s')
 	let info_cont = document.getElementById("content-info")
 
-	
+	for (var i = 0; i < information.length; i++) {
+			var srt = '<h5>'+information[i].Heading+'</h5><blockquote> '+information[i].Annotation+'</blockquote><p>'+information[i].Paragraph+'</p>'//*<img src="'+information[i].Img+'">'
+			info_cont.innerHTML += srt
+		}
 
 
 	header.innerHTML = info_but.innerHTML
@@ -39,7 +42,7 @@ window.onload = function(){
 		header.innerHTML = match_but.innerHTML
 		table.innerHTML = ''
 		for (var i = 0; i < data.length; i++) {
-			var srt = '<tr><td>'+data[i].team1+' - '+data[i].team2+'</td><td>'+data[i].coef1+'</td><td>'+data[i].coefX+'</td><td>'+data[i].coef2+'</td><td>' +button+'</td></tr>'
+			var srt = '<tr><td>'+data[i].team1+' - '+data[i].team2+'</td><td>'+data[i].coef1+'</td><td>'+data[i].coefX+'</td><td>'+data[i].coef2+'</td><td><button></button></td></tr>'
 			table.innerHTML += srt
 		}
 	}
@@ -49,7 +52,11 @@ window.onload = function(){
 		match_cont.setAttribute('visible','none')
 		info_cont.setAttribute('visible','yes')
 		header.innerHTML = info_but.innerHTML
-		
+		info_cont .innerHTML = ''
+		for (var i = 0; i < information.length; i++) {
+			var srt = '<h5>'+information[i].Heading+'</h5><blockquote> '+information[i].Annotation+'</blockquote><p>'+information[i].Paragraph+'</p>'//*<img src="'+information[i].Img+'">'
+			info_cont.innerHTML += srt
+		}
 	}
 	info_but_s.onclick = info_but.onclick
 

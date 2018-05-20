@@ -74,6 +74,10 @@ span{
 {
 	display: none;
 }
+
+.content-info>img{
+	width: 7vw;
+}
 @media screen and (max-width: 768px) and (orientation: portrait){
 
 .terminal-header h2{
