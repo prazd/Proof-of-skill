@@ -33,8 +33,7 @@ contract LeagueOfBest {
         return address(this).balance;
     }
     
-    function setFromContract(uint256 coef, int _match_id, int _result) public view returns(bool){      // отправляет эфир получателю с учетом коэффициента
-        require(msg.sender == owner);
+    function setFromContract(uint256 coef, int _match_id, int _result) public payable {//returns(bool){      // отправляет эфир получателю с учетом коэффициента;
         for(var i = 0;i <= cou;i++){
             if (items[i].match_id == _match_id){
                 if(items[i].result == _result){
