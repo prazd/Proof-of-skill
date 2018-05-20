@@ -1,13 +1,17 @@
 
 .terminal{
 	background: #429871;
-	height:30vh;
+	height:40vh;
 	width:69.5vw;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	opacity: 0.9;
+	align-items: baseline;
+	padding:20px;
+	color:white;
+	border-radius: 1px;
+	box-shadow: 0 0 10px black;
 }
 	.terminal-header{
 		display: flex;
@@ -15,21 +19,43 @@
 		color:white;
 		
 	}
-		.terminal-header h2{
-			margin-left:20px;
+		.terminal-header h4{
+			margin-left:7px;
 		}
 	.terminal-checkboxes{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		color:white;
+		align-items: baseline;
 	}
-	
+	.terminal-checkboxes div{
+		margin: 5px;
+	}
+
+label , span{
+			color:white;
+}
+[type="checkbox"]{
+	margin-left : 3px;
+}
+span{
+	margin-right: 5px;
+}
+	.terminal-inp {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.terminal-inp div{
+		margin: 5px;
+	}
 
 #header_name{
 	height: 18vh;
-	margin-top: 14vh;
-	padding: 20px;
+	margin-top: 5vh;
+	padding-left: 10px;
+	padding-bottom: 20px;
 	background: white;
 	
 }
@@ -49,6 +75,10 @@
 	display: none;
 }
 @media screen and (max-width: 768px) and (orientation: portrait){
+
+.terminal-header h2{
+	font-size: 0.5;
+}
 	
 #header_name{
 	
