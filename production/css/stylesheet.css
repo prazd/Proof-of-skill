@@ -1,9 +1,35 @@
-.content{
-	width: 80vw;
-	margin: auto;
+
+
+#header_name{
+	height: 18vh;
+	margin-top: 14vh;
+	background: white;
+	
+}
+.container{
+	width: 70vw;
+	margin:auto;
+}
+.parallax-container {
+    height: 20vh;
+}
+
+[visible = 'yes']{
+	display: block;
+}
+[visible = 'none']
+{
+	display: none;
 }
 @media screen and (max-width: 768px) and (orientation: portrait){
-	.content{
-		width: 95vw;
-	}
+	
+#header_name{
+	
+	margin-top: 14vh;
+	background: white;
+	font-size: 190%;
+}
+li{
+	padding: 5px;
+
 }

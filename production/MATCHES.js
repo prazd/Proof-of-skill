@@ -1,5 +1,5 @@
 var data = [{
-		"id" : 1,
+		"id" : 0,
 		"team1" : "RUS",
 		"team2" : "SA",
 		"coef1" : 1.35 ,
@@ -8,7 +8,7 @@ var data = [{
 	},
 	
 	{
-		"id" : 2,
+		"id" : 1,
 		"team1" : "EG",
 		"team2" : "UR",
 		"coef1" : 5.50 ,
@@ -17,7 +17,7 @@ var data = [{
 	},
 
 	{
-		"id" : 3,
+		"id" : 2,
 		"team1" : "MAR",
 		"team2" : "IR",
 		"coef1" : 2.35 ,
@@ -25,7 +25,7 @@ var data = [{
 		"coefX" : 3.65
 	},
 	{
-		"id" : 4,
+		"id" : 3,
 		"team1" : "POR",
 		"team2" : "SPA",
 		"coef1" : 4.6 ,
@@ -33,7 +33,7 @@ var data = [{
 		"coefX" : 1.9
 	},
 	{
-		"id" : 5,
+		"id" : 4,
 		"team1" : "FR",
 		"team2" : "AUS",
 		"coef1" : 1.22 ,
@@ -41,7 +41,7 @@ var data = [{
 		"coefX" : 19
 	},
 	{
-		"id" : 6,
+		"id" : 5,
 		"team1" : "ARG",
 		"team2" : "IS",
 		"coef1" : 1.35 ,
@@ -49,7 +49,7 @@ var data = [{
 		"coefX" : 12.25
 	},
 	{
-		"id" : 7,
+		"id" : 6,
 		"team1" : "PER",
 		"team2" : "DAN",
 		"coef1" : 3.85 ,
