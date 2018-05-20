@@ -1,8 +1,35 @@
 
+.terminal{
+	background: #429871;
+	height:30vh;
+	width:69.5vw;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	opacity: 0.9;
+}
+	.terminal-header{
+		display: flex;
+		align-items: center;
+		color:white;
+		
+	}
+		.terminal-header h2{
+			margin-left:20px;
+		}
+	.terminal-checkboxes{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		color:white;
+	}
+	
 
 #header_name{
 	height: 18vh;
 	margin-top: 14vh;
+	padding: 20px;
 	background: white;
 	
 }
@@ -25,7 +52,7 @@
 	
 #header_name{
 	
-	margin-top: 14vh;
+	margin-top: 15vh;
 	background: white;
 	font-size: 190%;
 }
